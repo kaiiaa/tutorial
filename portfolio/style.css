@@ -1,0 +1,142 @@
+
+@charset "UTF-8";
+/*
+    font-family: "Alice", serif;
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(21, 15, 17, 0.75),rgba(0,0,0,0.75)), url(background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    font-family: "Comfortaa", sans-serif;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #cbb2cc;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+.content{
+    font-family: "Cedarville Cursive", cursive;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+.content h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 25px;
+}
+.img_deg{
+    float: left;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 40px;
+}
+
+.sobre{
+    position: absolute;
+    width: 90%;
+    left: 8%;
+    top: 100%;
+}
+.sobre h1{
+    font-family: "Cedarville Cursive", cursive;
+    color: #112e14;
+    width: 80%;
+    font-size: 400%;
+}
+.sobre p{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 170%;
+    width: auto;
+    transform: translateY(40%);
+    color: #3f1022;
+
+}
+.galery{
+    position: relative;
+    top: 100%;
+    width: 100%;
+}
+
+.galery h1{
+    font-size: 10vh;
+    font-family: "Cedarville Cursive", cursive;
+    text-align: center;
+    color: #3f1022;
+    background-color: #efe0e6;
+}
+.desenho1 {
+    width: 17%;
+    border-radius: 3%;
+    margin: 32px;
+    margin-left: 100px;
+
+}
+.desenho2 {
+    width: 17%;
+    border-radius: 3%;
+    margin: 32px;
+
+}
+.desenho3 {
+    width: 20%;
+    border-radius: 3%;
+    margin: 32px;
+
+}
+.desenho4 {
+    width: 17%;
+    border-radius: 3%;
+    margin: 32px;
+    position: absolute;
+    margin-right: 100px;
+}
